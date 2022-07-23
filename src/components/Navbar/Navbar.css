@@ -6,8 +6,12 @@ nav{
     align-items: center;
     background-color: rgb(63, 63, 63);
 }
+.contmenuburger img, .contmenuburger{
+    display: none;
+}
 h1.namepage{
     color: white;
+    font-size: 35px;
     margin-left: 20px;
     cursor: pointer;
     text-shadow: 0 0px 5px rgba(0, 0, 0, 0.797);
@@ -20,8 +24,8 @@ button{
     cursor: pointer;
     margin-left: 5px;
     margin-right: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 10px;
     padding-right: 10px;
     border: 0px;
@@ -30,5 +34,22 @@ button{
 button:hover{
     background-color: rgb(94, 94, 94);
     border: 0px;
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .coontbutt button, .contbutt{
+        display: none;
+    }
+    .contmenuburger img, .contmenuburger{
+        display: flex;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .contmenuburger img:hover{
+        transform: scale(1.05);
+    }
+    .contmenuburger img:focus{
+        transform: scale(1.05);
+    }
 }
