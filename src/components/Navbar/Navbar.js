@@ -7,11 +7,12 @@ const Navbar = () => {
             <div>
                 <h1 className="namepage">Todo3D</h1>
             </div>
-            <div className="divbot">
+            <div>
                 <button>Chucherias</button>
                 <button>Coleccionables</button>
                 <button>Pesca</button>
             </div>
+            <CartWidget/>
         </nav>
     )
 }
