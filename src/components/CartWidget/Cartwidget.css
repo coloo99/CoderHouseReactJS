@@ -1,0 +1,22 @@
+div.carwid{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+p{
+    color: white;
+    text-shadow: 0 0px 5px rgba(0, 0, 0, 0.797);
+    font-size: 25px;
+    float: right;
+    margin-right: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+img{
+    height: 40px;
+    float: left;
+    cursor: pointer;
+}
+img:hover{
+    transform: scale(1.1);
+}
