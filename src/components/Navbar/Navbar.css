@@ -38,12 +38,27 @@ button:hover{
 }
 
 @media (max-width: 600px) {
-    .coontbutt button, .contbutt{
-        display: none;
+    .contbutt{
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        width: 100%;
+        top: 70px;
+        padding-bottom: 10px;
+        background-color: rgb(130, 130, 130);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transform:translateX(-100%);
+    }
+    .contbutt.open{
+        transform:translateX(0);
+    }
+    .contbutt button{
+        margin-top: 10px;
     }
     .contmenuburger img, .contmenuburger{
         display: flex;
-        margin-left: 10px;
+        margin-left: 5px;
         cursor: pointer;
     }
     .contmenuburger img:hover{
