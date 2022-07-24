@@ -9,15 +9,20 @@ nav{
 .contmenuburger img, .contmenuburger{
     display: none;
 }
+.contnamepage{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
 h1.namepage{
     color: white;
+    text-shadow: 0 0px 5px rgba(0, 0, 0, 0.797);
     font-size: 35px;
     margin-left: 20px;
     cursor: pointer;
-    text-shadow: 0 0px 5px rgba(0, 0, 0, 0.797);
 }
 button{
-    font-size: 15px;
+    font-size: 17px;
     background-color: rgb(63, 63, 63);
     font-weight:bold;
     color: white;
@@ -49,6 +54,7 @@ button:hover{
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         transform:translateX(-100%);
+        transition:all .45s;
     }
     .contbutt.open{
         transform:translateX(0);
