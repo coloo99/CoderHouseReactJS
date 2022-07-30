@@ -8,6 +8,7 @@ nav{
 }
 .contmenuburger img, .contmenuburger{
     display: none;
+    width: 40px;
 }
 .contnamepage{
     display: flex;
@@ -64,7 +65,7 @@ button:hover{
     }
     .contmenuburger img, .contmenuburger{
         display: flex;
-        margin-left: 5px;
+        margin-left: 10px;
         cursor: pointer;
     }
     .contmenuburger img:hover{
