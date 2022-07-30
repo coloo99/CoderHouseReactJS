@@ -3,8 +3,8 @@ import './Cartwidget.css'
 const CartWidget = () => {
     return (
         <div className="carwid">
-            <img src='images/navbar/carrito2.png' alt='CartWidget'/>
-            <p>5</p>
+            <img className='cart' src='images/navbar/carrito2.png' alt='CartWidget'/>
+            <p className='countCart'>5</p>
         </div>
     )
 }

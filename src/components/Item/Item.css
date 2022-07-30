@@ -1,0 +1,26 @@
+li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    border-bottom: 1px solid rgb(165, 165, 165);
+}
+h3.itemName{
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: 900;
+}
+img.item{
+    width: 200px;
+}
+.description{
+    font-style:unset;
+}
+.stock{
+    width: 160px;
+    color: white;
+    background-color: gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}

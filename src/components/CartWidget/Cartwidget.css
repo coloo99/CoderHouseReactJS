@@ -3,7 +3,7 @@ div.carwid{
     align-items: center;
     height: 70px;
 }
-p{
+p.countCart{
     color: white;
     text-shadow: 0 0px 5px rgba(0, 0, 0, 0.797);
     font-size: 25px;
@@ -12,7 +12,7 @@ p{
     margin-left: 5px;
     cursor: pointer;
 }
-img{
+img.cart{
     height: 40px;
     float: left;
     cursor: pointer;

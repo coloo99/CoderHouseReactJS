@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <nav>
             <div className={`contmenuburger ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
-                <img src='images/navbar/menuburger2.png' alt='CartWidget'/>
+                <img className="menuBurger" src='images/navbar/menuburger2.png' alt='CartWidget'/>
             </div>
             <div className="contnamepage">
                 <h1 className="namepage">Todo3D</h1>
