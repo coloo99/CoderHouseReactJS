@@ -10,7 +10,7 @@ const ItemDetail = ({ name, img, description, price }) => {
     return (
         <div className='containerProdDetail'>
             <h2 className="nameProdDetail">{name}</h2>
-            <img className="itemImgProdDetail" src={`../${img}`} alt={name}/>
+            <img className="itemImgProdDetail" src={img} alt={name}/>
             <p>{description}</p>
             <p className='priceDetail'>${price}</p>
             <Counter stock={15} onAdd={handleOnAdd}/>

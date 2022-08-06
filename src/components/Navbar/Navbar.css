@@ -15,16 +15,18 @@ nav{
     height: 100%;
     align-items: center;
 }
-h1.namepage{
+h1.namepage, .linkName{
+    text-decoration: none;
     color: white;
     text-shadow: 0 0px 5px rgba(0, 0, 0, 0.797);
     font-size: 35px;
     margin-left: 20px;
     cursor: pointer;
 }
-button.buttonNav{
+.buttonNav{
     font-size: 17px;
     background-color: rgb(63, 63, 63);
+    text-decoration: none;
     font-weight:bold;
     color: white;
     cursor: pointer;
@@ -37,7 +39,7 @@ button.buttonNav{
     border: 0px;
     border-radius: 5px;
 }
-button.buttonNav:hover{
+.buttonNav:hover{
     background-color: rgb(94, 94, 94);
     border: 0px;
     transform: scale(1.05);
@@ -60,7 +62,7 @@ button.buttonNav:hover{
     .contbutt.open{
         transform:translateX(0);
     }
-    .contbutt button.buttonNav{
+    .contbutt .buttonNav{
         margin-top: 10px;
     }
     .contmenuburger img, .contmenuburger{
