@@ -21,4 +21,4 @@ http://localhost:3000/detail/itemId  Muestra los detalles de un producto especif
 http://localhost:3000/rutaNoExistente  Se muestra un error 404
 
 ## `Gif con muestreo de las rutas`
-![Gif muestreo de rutas](/images/rutas.gif)
+![Gif muestreo de rutas](public\images\GifMuestreoDeRutas.gif)
