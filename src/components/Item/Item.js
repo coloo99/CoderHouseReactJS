@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const Item =({product}) => {
     return(
         <div className='itemContainer'>
-            <h3 className='itemName'>{product.name}</h3>
-            <img className='itemImg' src={product.img} alt={product.name}/>
+            <Link className='itemName' to={`/detail/${product.id}`}><h3 className='itemName'>{product.name}</h3></Link>
+            <Link to={`/detail/${product.id}`}><img className='itemImg' src={product.img} alt={product.name}/></Link>
             <Link to={`/detail/${product.id}`} className="detalles">Ver detalles</Link>
             <p className="stock">Stock disponible: {product.stock}</p>
         </div>

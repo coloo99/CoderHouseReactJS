@@ -5,10 +5,12 @@
     align-items: center;
     margin-bottom: 5px;
 }
-h3.itemName{
-    font-size: 25px;
+h3.itemName, .itemName{
+    text-decoration: none;
+    color: black;
     font-style: oblique;
-    font-weight: 900;
+    font-size: 25px;
+    font-weight: 800;
     margin-top: 10px;
     margin-bottom: 10px;
 }
