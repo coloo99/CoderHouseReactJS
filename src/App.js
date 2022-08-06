@@ -1,19 +1,20 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import Counter from './components/Counter/Counter'
+import ItemDetailContainter from './components/ItemDetailContainer/ItemDetailContainter';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
 
-  const handleOnAdd = (quantity) => {
-    console.log(`La cantidad agregada es: ${quantity}`)
-  }
-
   return (
     <div className="App">
-      <Navbar/>
-      <ItemListContainer greeting='Mi tienda 3D'/>
-      <Counter stock={15} onAdd={handleOnAdd}/>
+      <BrowserRouter>
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<ItemListContainer greeting='Mi tienda 3D'/>} />
+          <Route path='/detail/:itemId' element={<ItemDetailContainter />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

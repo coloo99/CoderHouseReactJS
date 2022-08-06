@@ -1,0 +1,15 @@
+.containerProdDetail{
+    height: 100%;
+    width: 100%;
+}
+.nameProdDetail{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0px 5px rgba(138, 138, 138, 0.797);
+}
+img.itemImgProdDetail{
+   width: 300px;
+}
+.priceDetail{
+    font-weight: bold;
+    font-size: 25px;
+}
