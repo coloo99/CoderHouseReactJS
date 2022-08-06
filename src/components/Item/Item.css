@@ -1,26 +1,36 @@
-li{
+.itemContainer{
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    list-style: none;
-    border-bottom: 1px solid rgb(165, 165, 165);
+    margin-bottom: 5px;
 }
 h3.itemName{
     font-size: 25px;
     font-style: oblique;
     font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-img.item{
+img.itemImg{
     width: 200px;
 }
-.description{
-    font-style:unset;
+.detalles{
+    text-decoration: none;
+    color: black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    background-color: rgb(207, 207, 207);
 }
 .stock{
     width: 160px;
     color: white;
-    background-color: gray;
+    background-color: rgb(161, 161, 161);
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 5px;
+    margin-bottom: 10px
 }
