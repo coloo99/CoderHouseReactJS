@@ -26,7 +26,13 @@ const ItemDetail = ({ id, name, img, description, price, stock }) => {
             <img className="itemImgProdDetail" src={img} alt={name}/>
             <p>{description}</p>
             <p className='priceDetail'>${price}</p>
-            <Counter stock={stock} onAdd={handleOnAdd} initial={productQuantity}/>
+            {
+                quantityToAdd === 0 ? (
+                    <Counter stock={stock} onAdd={handleOnAdd} initial={productQuantity}/>
+                ):(
+                    <Link to='/cart'>Finalizar compra</Link>
+                )
+            }
         </div>
     )
 }
