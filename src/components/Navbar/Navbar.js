@@ -1,9 +1,11 @@
 import './Navbar.css'
-import React, { useState } from "react";
+import { useState } from "react";
 import CartWidget from '../CartWidget/Cartwidget'
 import { Link } from 'react-router-dom'
+import { CartContext } from '../../App';
 
 const Navbar = () => {
+
     const [isOpen, setIsOpen] = useState(false);
     return (
         <nav>
