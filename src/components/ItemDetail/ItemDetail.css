@@ -13,3 +13,14 @@ img.itemImgProdDetail{
     font-weight: bold;
     font-size: 25px;
 }
+.al-carrito{
+    color: white;
+    background-color: rgb(63, 63, 63);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.al-carrito:hover{
+    background-color: rgb(94, 94, 94);
+}

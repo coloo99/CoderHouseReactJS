@@ -1,5 +1,5 @@
 const products = [
-    {id:'1', name: 'Harry Potter', price:1200, category: 'coleccionable', img: '/images/products/coleccionables/harry.png', stock: 6, description: 'Coleccionable de harry potter impreso en 3D'},
+    {id:'1', name: 'Harry Potter', price:1200, category: 'coleccionable', img: '/images/products/coleccionables/harry.png', stock: 15, description: 'Coleccionable de harry potter impreso en 3D'},
     {id:'2', name: 'Alastor Moody', price:1000, category: 'coleccionable', img: '/images/products/coleccionables/alastormoody.png', stock: 2, description: 'Coleccionable de akastir moody impreso en 3D'},
     {id:'3', name: 'Ron Weasley', price:1150, category: 'coleccionable', img: '/images/products/coleccionables/ronweasley.png', stock: 3, description: 'Coleccionable de ron weasley impreso en 3D'},
     {id:'4', name: 'Jack Sparrow', price:990, category: 'coleccionable', img: '/images/products/coleccionables/jacksparrow.png', stock: 5, description: 'Coleccionable de jack sparrow impreso en 3D'},
@@ -19,7 +19,7 @@ const products = [
         return new Promise((resolve) => {
             setTimeout(() => {
                 resolve(products)
-            }, 1000)
+            }, 500)
         })
     }
 
@@ -27,7 +27,7 @@ const products = [
         return new Promise((resolve) => {
             setTimeout(() => {
                 resolve(products.filter(prod => prod.category === categoryId))
-            }, 1000)
+            }, 500)
         })
     }
 
@@ -36,7 +36,7 @@ const products = [
         return new Promise((resolve) => {
             setTimeout(() => {
                 resolve(products.find(prod => prod.id === id))
-            }, 1000)
+            }, 500)
         })
     }
     
