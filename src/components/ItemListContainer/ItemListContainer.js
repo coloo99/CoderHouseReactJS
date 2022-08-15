@@ -30,11 +30,11 @@ const ItemListContainer = ({ greeting }) => {
             : query(collection(db, 'products'), where('category', '==', categoryId))
         
         getDocs(collectionRef).then(response => {
-            const productAdaptados = response.docs.map(doc => {
-                const data = doc.data()
-                return {id: doc.id, ...data}
+            const productosGenerados = response.docs.map(doc => {
+                const datosProductos = doc.data()
+                return {id: doc.id, ...datosProductos}
             })
-            setProducts(productAdaptados)
+            setProducts(productosGenerados)
         }).catch(error => {
             console.log(error)
         }).finally(() => {

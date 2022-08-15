@@ -17,7 +17,6 @@ const ItemDetail = ({ id, name, img, description, price, stock }) => {
     }
     
     const productQuantity = getProductQuantity(id)
-    console.log(productQuantity)
 
     return (
         <div className='containerProdDetail'>
@@ -29,7 +28,7 @@ const ItemDetail = ({ id, name, img, description, price, stock }) => {
                 quantityToAdd === 0 ? (
                     <Counter onAdd={handleOnAdd} stock={stock} initial={productQuantity}/>
                 ):(
-                    <Link class="al-carrito" to='/cart'>Ir al carrito</Link>
+                    <Link className='al-carrito' to='/cart'>Ir al carrito</Link>
                 )
             }
         </div>
