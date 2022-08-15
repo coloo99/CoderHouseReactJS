@@ -6,10 +6,12 @@ import { db } from '../../service/firebase'
 
 const ItemDetailContainter = () => {
     const [product, setProduct] = useState()
+    const [cargando, setCargando] = useState(true)
 
     const {itemId} = useParams()
 
     useEffect(() => {
+        setCargando(true)
         getDoc(doc(db, 'products', itemId)).then(resp => {
             const datosProducto = resp.data()
             const productoGenerado = { id: resp.id, ...datosProducto }
@@ -17,14 +19,14 @@ const ItemDetailContainter = () => {
         }).catch(error => {
             console.log(error)
         }).finally(() => {
-            /* setLoading(false) */
+            setCargando(false)
         })
     }, [itemId])
 
     return (
         <div>
             <h1>Detalle del producto</h1>
-            <ItemDetail {...product} />
+            {cargando ? <h1 className='cargandoProd'>Cargando productos...</h1> : <ItemDetail {...product} />}
         </div>
     )
 }

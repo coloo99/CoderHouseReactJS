@@ -1,5 +1,4 @@
 import './App.css';
-import { useState, createContext } from 'react';
 import Navbar from './components/Navbar/Navbar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainter from './components/ItemDetailContainer/ItemDetailContainter';
@@ -13,7 +12,7 @@ function App() {
         <BrowserRouter>
           <Navbar/>
           <Routes>
-            <Route path='/' element={<ItemListContainer greeting='Todos los productos de Mi tienda 3D'/>} />
+            <Route path='/' element={<ItemListContainer greeting='Productos de Todo3D'/>} />
             <Route path='/category/:categoryId' element={<ItemListContainer greeting='Productos filtrados'/>} />
             <Route path='/detail/:itemId' element={<ItemDetailContainter />} />
             <Route path='*' element={<h1>404 NOT FOUND</h1>} />
