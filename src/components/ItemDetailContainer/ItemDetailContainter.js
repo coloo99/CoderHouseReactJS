@@ -25,7 +25,6 @@ const ItemDetailContainter = () => {
 
     return (
         <div>
-            <h1>Detalle del producto</h1>
             {cargando ? <h1 className='cargandoProd'>Cargando productos...</h1> : <ItemDetail {...product} />}
         </div>
     )

@@ -1,0 +1,114 @@
+.cart{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloCarrito{
+    margin-top: 50px;
+}
+
+.nombresItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.nombresItem div{
+    color: rgb(82, 82, 82);
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: 700;
+    width: 20%;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.contenidoItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.contenidoItem div{
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+    font-style: oblique;
+    font-size: 15px;
+    font-weight: 700;
+
+
+    width: 20%;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+.contenidoItem .divImg{
+    background-color: rgba(132, 132, 132, 0);
+    border: 0px;
+}
+.contenidoItem .divImg img{
+    background-color: rgba(132, 132, 132, 0);
+    width: 90%;
+}
+.delete-icono{
+    width: 20%;
+    cursor: pointer;
+}
+
+.pieCarrito{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(42, 85, 151);
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.pieCarrito .precioTotal{
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: 700;
+    cursor:default;
+}
+.pieCarrito .vaciarCarrito{
+    display: flex;
+    align-items: center;
+    background-color: rgb(197, 94, 94);
+    padding: 3px 10px 5px 10px;
+    border-radius: 15px;
+    color: white;
+}
+.pieCarrito .comprar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(52, 142, 67);
+    padding: 3px 10px 5px 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+.volverTienda{
+    display: flex;
+    align-items: center;
+    background-color: rgb(52, 142, 67);
+    padding: 3px 10px 5px 10px;
+    border-radius: 15px;
+    padding: 10px 15px 10px 15px;
+    color: white;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
