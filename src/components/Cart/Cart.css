@@ -43,9 +43,9 @@
 
 
     width: 20%;
-    margin-top: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     
 }
 .contenidoItem .divImg{
@@ -62,41 +62,62 @@
 }
 
 .pieCarrito{
-    width: 100%;
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    color: rgb(42, 85, 151);
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+}
+.pieCarrito div{
+    text-decoration: none;
+    color: rgb(82, 82, 82);
     font-style: oblique;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
-    cursor: pointer;
+
+
+    width: 20%;
+    margin-top: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .pieCarrito .precioTotal{
     text-decoration: none;
     color: rgb(82, 82, 82);
-    font-style: oblique;
-    font-size: 20px;
-    font-weight: 700;
     cursor:default;
 }
 .pieCarrito .vaciarCarrito{
     display: flex;
     align-items: center;
+    width: 20%;
+}
+.pieCarrito .vaciarCarrito2{
     background-color: rgb(197, 94, 94);
     padding: 3px 10px 5px 10px;
     border-radius: 15px;
     color: white;
+    font-style: oblique;
+    cursor: pointer;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .pieCarrito .comprar{
     display: flex;
     align-items: center;
+    width: 20%;
+}
+.pieCarrito .comprar2{
     background-color: rgb(52, 142, 67);
     padding: 3px 10px 5px 10px;
     border-radius: 15px;
     color: white;
+    font-style: oblique;
+    cursor: pointer;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .volverTienda{
@@ -111,4 +132,65 @@
 .link{
     text-decoration: none;
     color: white;
+}
+
+
+@media screen and (min-width: 1000px) {
+    .delete-icono{
+        width: 15%;
+        cursor: pointer;
+    }
+    .contenidoItem .divImg{
+        background-color: rgba(132, 132, 132, 0);
+        border: 0px;
+    }
+    .contenidoItem .divImg img{
+        background-color: rgba(132, 132, 132, 0);
+        width: 60%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .nombresItem div{
+        font-size: 17px;
+        font-weight: 800;
+    }
+    .contenidoItem div{
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .pieCarrito .vaciarCarrito2{
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .pieCarrito .comprar2{
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .pieCarrito .precioTotal{
+        font-size: 13px;
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .nombresItem div{
+        font-size: 11px;
+        font-weight: 800;
+    }
+    .contenidoItem div{
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .pieCarrito .vaciarCarrito2{
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .pieCarrito .comprar2{
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .pieCarrito .precioTotal{
+        font-size: 10px;
+        font-weight: 800;
+    }
 }

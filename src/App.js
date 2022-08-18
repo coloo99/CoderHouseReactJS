@@ -14,8 +14,8 @@ function App() {
           <Navbar/>
           <Routes>
             <Route path='/cart' element={<Cart/>} />
-            <Route path='/' element={<ItemListContainer greeting='Productos de Todo3D'/>} />
-            <Route path='/category/:categoryId' element={<ItemListContainer greeting='Productos filtrados'/>} />
+            <Route path='/' element={<ItemListContainer greeting='Todos nuestros'/>} />
+            <Route path='/category/:categoryId' element={<ItemListContainer greeting='Todos nuestros'/>} />
             <Route path='/detail/:itemId' element={<ItemDetailContainter />} />
             <Route path='*' element={<h1>404 NOT FOUND</h1>} />
           </Routes>

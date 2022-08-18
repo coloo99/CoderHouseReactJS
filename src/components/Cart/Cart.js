@@ -34,9 +34,12 @@ const Cart = () =>{
                 )}
                 
                 <div className='pieCarrito'>
-                    <div className='vaciarCarrito' onClick={() => clearCart()}>Vaciar carrito</div>
-                    <div className='precioTotal'>Precio Total ${precioTotal()}</div>
-                    <div className='comprar'>Comprar</div>
+                    <div className='vaciarCarrito' onClick={() => clearCart()}><div className='vaciarCarrito2'>Vaciar</div></div>
+                    <div></div>
+                    <div></div>
+                    <div className='precioTotal'>Precio Total</div>
+                    <div className='precioTotal'> ${precioTotal()}</div>
+                    <div className='comprar'><div className='comprar2'>Comprar</div></div>
                 </div>
             </div>
         
