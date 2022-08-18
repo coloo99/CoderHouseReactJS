@@ -3,8 +3,8 @@
     width: 100%;
 }
 .nameProdDetail{
-    color: rgb(0, 0, 0);
-    text-shadow: 0 0px 5px rgba(138, 138, 138, 0.797);
+    margin-top: 90px;
+    color: rgb(82, 82, 82);
 }
 img.itemImgProdDetail{
    width: 300px;

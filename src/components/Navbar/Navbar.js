@@ -19,7 +19,7 @@ const Navbar = () => {
                 <Link to='/category/coleccionable' className="buttonNav">Coleccionables</Link>
                 <Link to='/category/senuelo' className="buttonNav">Pesca</Link>
             </div>
-            <CartWidget/>
+            <Link to='/cart'><CartWidget/></Link>
         </nav>
     )
 }
