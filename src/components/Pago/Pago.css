@@ -1,0 +1,45 @@
+.contFormPago{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    max-width: 30%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+form .inpPago{
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-weight: 800;
+    color:rgb(36, 36, 36);
+}
+form .botonPago{
+    margin-top: 20px;
+    width: 30%;
+    height: 30px;
+    background:rgb(63, 63, 63);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+form .botonPago:hover{
+    background-color: rgb(94, 94, 94)
+}
+.numeroOrden{
+    background-color: rgb(94, 94, 94);
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+}
+.datoOrden{
+    color: rgb(94, 94, 94)
+}

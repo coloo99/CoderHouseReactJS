@@ -39,7 +39,7 @@ const Cart = () =>{
                                             <div></div>
                                             <div className='precioTotal'>Precio Total</div>
                                             <div className='precioTotal'> ${precioTotal()}</div>
-                                            <Link to={'/pago'} className='comprar'><div className='comprar2'>Comprar</div></Link>
+                                            <Link to={'/pago'} className='comprar link'><div className='comprar2'>Comprar</div></Link>
                                         </div>
                                     </div>
     )
