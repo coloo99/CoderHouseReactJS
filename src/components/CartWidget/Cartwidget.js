@@ -9,6 +9,7 @@ const CartWidget = () => {
     const quantity = getQuantity()
 
     return (
+        quantity === 0 ? <> </> :
         <div className="carwid">
             <img className='cart' src={`${process.env.PUBLIC_URL}/images/navbar/carrito2.png`} alt='CartWidget'/>
             {<p className='countCart'>{quantity}</p>}
